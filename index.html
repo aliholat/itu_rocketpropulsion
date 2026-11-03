@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UZB441E Rocket Propulsion – interactive first midterm study platform. Derivations, nozzle graphs, schematics and numerical practice." />
+  <meta name="theme-color" content="#09131f" />
+  <title>IGNITION — UZB441E Rocket Propulsion Midterm Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>window.MathJax = {tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']]}, options: {skipHtmlTags: ['script','noscript','style','textarea','pre','code']}, startup: {typeset:false}};</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-icon">◈</span><div><strong>IGNITION<span class="brand-dot">.</span></strong><small>ROCKET PROPULSION LAB</small></div></div>
+      <div class="sidebar-subtitle">UZB441E / 2026–2027 FALL</div>
+      <div class="nav-caption">STUDY WORKSPACE</div>
+      <nav class="nav-list" id="nav">
+        <button class="nav-btn active" data-page="home"><span class="nav-symbol">▦</span> Overview <span class="nav-hint">01</span></button>
+        <button class="nav-btn" data-page="derivations"><span class="nav-symbol">∑</span> Derivations <span class="nav-hint">02</span></button>
+        <button class="nav-btn" data-page="schematics"><span class="nav-symbol">⌁</span> Engine schematics <span class="nav-hint">03</span></button>
+        <button class="nav-btn" data-page="graphs"><span class="nav-symbol">⌁</span> Interactive graphs <span class="nav-hint">04</span></button>
+        <button class="nav-btn" data-page="problems"><span class="nav-symbol">≡</span> Worked examples <span class="nav-hint">05</span></button>
+        <button class="nav-btn" data-page="ranges"><span class="nav-symbol">⇥</span> Thrust & Isp ranges <span class="nav-hint">06</span></button>
+        <button class="nav-btn" data-page="concepts"><span class="nav-symbol">◉</span> Concepts & traps <span class="nav-hint">07</span></button>
+        <button class="nav-btn" data-page="quiz"><span class="nav-symbol">◇</span> Exam simulator <span class="nav-hint">08</span></button>
+        <button class="nav-btn" data-page="flashcards"><span class="nav-symbol">▤</span> Flashcards <span class="nav-hint">09</span></button>
+        <button class="nav-btn" data-page="calculator"><span class="nav-symbol">⊞</span> Nozzle calculator <span class="nav-hint">10</span></button>
+        <button class="nav-btn" data-page="sheet"><span class="nav-symbol">↗</span> Formula sheet <span class="nav-hint">11</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="tiny-green-dot"></div> <span>100% static • GitHub Pages ready</span><div class="sidebar-meter"><div class="sidebar-meter-fill" id="sidebar-meter-fill"></div></div><small id="side-progress">0 formulas mastered</small></div>
+    </aside>
+    <div class="main-frame">
+      <header class="topbar"><div class="mobile-brand"><button class="icon-button" id="menu-btn" aria-label="Open menu">☰</button><strong>IGNITION<span class="brand-dot">.</span></strong></div><div class="breadcrumbs"><span>ROCKET PROPULSION</span><span class="crumb-slash">/</span><strong id="breadcrumb">Overview</strong></div><div class="top-actions"><button class="search-launch" id="search-open" title="Search formulas, concepts and examples">⌕ <span>Search anything</span> <kbd>/</kbd></button><div class="exam-chip"><span class="orange-dot"></span> MIDTERM 01</div></div></header>
+      <main class="page-content" id="page-content" tabindex="-1"></main>
+      <footer class="footer"><span>UZB441E · Prof. Dr. Fırat Oğuz Edis · ITU</span><span>Study aid • Verify assumptions and units • Designed for Midterm 01</span></footer>
+    </div>
+  </div>
+  <div class="search-overlay hidden" id="search-overlay"><div class="search-box" role="dialog" aria-modal="true" aria-label="Search study content"><div class="search-header">⌕ <input type="search" id="global-search" placeholder="Search formulas, nozzle theory, exam questions..." autocomplete="off"><button id="search-close" aria-label="Close search">ESC</button></div><div class="search-results" id="search-results"></div><div class="search-foot">Select an item to open its section. Press Escape to close.</div></div></div>
+  <div id="toast" class="toast hidden"></div>
+</body>
+</html>
