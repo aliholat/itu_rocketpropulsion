@@ -3,3 +3,24 @@
 @media(max-width:850px){.sidebar{transform:translateX(-100%);transition:transform .2s;box-shadow:12px 0 60px #0006}.sidebar.open{transform:translateX(0)}.main-frame{margin-left:0;width:100%}.mobile-brand{display:flex;align-items:center;gap:12px}.icon-button{background:#17303d;border:1px solid #355363;border-radius:8px;color:#e4f7f5;padding:6px 10px}.breadcrumbs{display:none}.topbar{height:65px}.hero{padding:28px}.hero-art{display:none}.stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.page-content{padding:23px 15px 50px}.topbar,.footer{padding-left:14px;padding-right:14px}.footer{flex-direction:column}.exam-chip{display:none}.search-launch span,.search-launch kbd{display:none}.search-launch{font-size:20px;line-height:1;padding:5px 11px}.hero{padding:23px 20px;min-height:0}.hero h1{font-size:34px}.hero-desc{font-size:12px}.stats{gap:9px}.stat{padding:14px}.stat-value{font-size:24px}.module-grid,.formula-grid,.diagram-grid,.chart-grid,.concept-grid,.formula-sheet,.explain-grid,.calc-grid{grid-template-columns:1fr}.section-head h2{font-size:20px}.formula-card.expanded{grid-column:auto}.formula-equation{font-size:13px}.formula-trigger{padding:14px}.formula-details{padding:13px}.step-row{gap:9px;grid-template-columns:25px 1fr}.fc-question{font-size:21px}.chart-container{min-height:190px}}
 @media print{body{background:#fff;color:#111}.sidebar,.topbar,.footer,.no-print,.hero-art,.search-overlay{display:none!important}.main-frame{margin:0;width:100%}.page-content{max-width:none;padding:0}.sheet-item{break-inside:avoid;background:#fff;border:1px solid #aaa;color:#111}.sheet-item .eq{color:#111}.formula-sheet{grid-template-columns:1fr 1fr}.print-only{display:block}}
+
+/* Slide-first formula bank */
+.bank-switch{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 18px}
+.bank-switch button{cursor:pointer;padding:13px 17px;border:1px solid #315568;border-radius:10px;background:#102332;color:#a9c5d0;font-weight:750;letter-spacing:.025em;font-size:12px}
+.bank-switch button.active{background:#184a4b;border-color:#59d5c9;color:#a4fff2;box-shadow:inset 0 0 0 1px #376c68}
+.notation-notice{padding:17px 19px;border-radius:14px;background:#112b37;border:1px solid #3a7882;color:#bfe3e4;margin:12px 0 18px;line-height:1.75;font-size:14px}
+.notation-notice strong{color:#8cf7e8;letter-spacing:.03em;font-size:12px}
+.notation-notice p{margin:8px 0 0}
+.slide-ref{display:inline-block!important;margin-left:7px;border-color:#50807e!important;color:#94e5e0!important;font-size:10px!important}
+.formula-equation,.step-tex,.sheet-item .eq,.math-scroll{overflow-x:auto;max-width:100%}
+.formula-equation mjx-container,.step-tex mjx-container{max-width:unset!important}
+@media(max-width:700px){.bank-switch button{width:100%}.notation-notice{padding:12px}.formula-equation{font-size:14px}}
+@media print{.bank-switch,.notation-notice{display:none!important}.sheet-item{page-break-inside:avoid}}
+
+.symbol-guide{border:1px solid #2e6072;border-radius:12px;background:#0c2430;margin:6px 0 18px;padding:0 16px;color:#bfdee2}
+.symbol-guide summary{cursor:pointer;padding:15px 0;color:#a3efe5;font-weight:750}
+.symbol-guide p{font-size:12px;color:#9db9c3;line-height:1.6}
+.symbol-pairs{display:grid;gap:0;margin:5px 0 15px;font-size:13px}
+.symbol-pairs>div{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;border-bottom:1px solid #254451;padding:9px 0}
+.symbol-pairs>div:first-child{color:#68e0d6;font-size:11px}
+#profile-metric{background:#122e3b;color:#b6e1dd;border:1px solid #39727b;border-radius:9px;padding:8px;min-width:235px}
